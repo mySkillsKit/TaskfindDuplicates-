@@ -10,7 +10,7 @@ public class Exercise {
 
         Set<Integer> duplicates = findDuplicatesSet(integers);
         List<Integer> list  = new ArrayList<>(duplicates);
-
+        list.removeAll(Collections.singleton(null));
         return list;
         
     }
